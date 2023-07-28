@@ -1,0 +1,73 @@
+.containerCard {
+    --glow-color: rgb(207, 187, 209);
+      height: 470px;
+      width: 470px;
+      text-align: center;
+      margin: 20px ;
+      padding: 10px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(rgba(37, 1, 83, 0.897), rgba(31, 3, 97, 0.726)),
+
+          center no-repeat;
+          color: var(--glow-color);
+          font-size: 13px;
+          font-weight: bold;
+      image-resolution: 100%;
+      background-size: 179%;
+      border: .15em solid var(--glow-color);
+      border-radius: 30px;
+      outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    transition: all 0.3s;
+    }
+    .containerCard:hover {
+      transform: scale(1.1);
+      border: 2px double rgb(221, 215, 212);
+      transition: all 2s, ease;
+    }
+  
+  
+    
+    .imageDiv  {
+       width: 100%; /* esto era lo unico que tenia el imagedivnoborrar */
+      
+        
+       
+       position: relative;
+       
+    }
+    .textDiv {
+       padding: auto;
+    }
+  
+    .text {
+      text-decoration: none ;
+      color: white;
+      padding: 20px;
+      border: blink;
+
+    }
+  
+    .image {
+      width: 80%;
+      border: 2px  outset rgba(116, 5, 92, 0.8);
+      padding: 0px;
+      border-radius: 20px;
+      margin: 10px 0;
+      object-fit: cover;
+      height: 200px;
+    }
+  
+    
+  
+  
+  
+   
+  
+  
+  
+   

@@ -1,0 +1,80 @@
+
+
+
+.containerButton{
+    position: relative;
+    top: -650px;
+    left: 500px;
+    
+}
+
+.detailButton {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --btn-color: rgb(100, 61, 136);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 12px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    transition: all 0.3s;
+    text-decoration: none;
+   }
+   
+
+   .detailButton:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   
+   
+.allDiv {
+    background-image: url(../imagenes/about.jpg);
+
+    padding: 3em;
+
+    color:wheat;
+
+  }
+  
+
+.div1, .div2 {
+    display: inline-block;
+    width: calc(30% - 50px);
+    margin: 3em 100px;
+    box-sizing: border-box;
+    border-radius: 2em;
+  }
+  
+.div1{
+    background-color: black;
+    color:white
+}
+.div2 {
+    background-color: #0077b5;
+    color: white;
+  }
+  .button{
+    border-radius: 2em;
+    width: 100px;
+    height: 50px;
+    background-color: wheat;
+  }
+  .button:hover {
+    box-shadow: 0 0 10px rgba(255, 10, 10, 5);
+    
+  }
+  .p{
+    width: 300px;;
+    height: 300px;
+    margin-left: 35em;
+    background-color:wheat;
+    color:black;
+    border-radius: 1em;
+  }
+  

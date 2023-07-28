@@ -1,0 +1,49 @@
+
+  
+  .underline{
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding-top: 10px;
+    overflow: hidden;
+  }
+  
+  .options option {
+    --glow-color: rgb(207, 187, 209);
+    background: rgba(66, 2, 66, 0.959);
+    color: var(--glow-color);
+  }
+  .options{
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --btn-color: rgb(100, 61, 136);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 12px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    transition: all 0.3s;
+    text-decoration: none;
+        
+         text-decoration: none;
+         border-radius: 1em;
+        outline: none;
+  }
+
+  .options:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    
+   }
+   
+   .options:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+    
+   }
+  .aligns{
+  margin-top: 1em;
+  }
