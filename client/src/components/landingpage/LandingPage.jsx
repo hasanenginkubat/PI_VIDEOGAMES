@@ -70,7 +70,7 @@ export default function LandingPage() {
           name="email"
           value={userData.email}
           onChange={handleInputChange}
-          placeholder="Email"
+          placeholder="kubathasanengin@gmail.com"
         />
         {userError.email && <p className={style.errorMessage}>{userError.email}</p>}
       </div>
@@ -81,7 +81,7 @@ export default function LandingPage() {
           name="password"
           value={userData.password}
           onChange={handleInputChange}
-          placeholder="Password"
+          placeholder="123"
         />
         {userError.password && <p className={style.errorMessage}>{userError.password}</p>}
       </div>
