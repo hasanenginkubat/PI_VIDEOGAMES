@@ -1,6 +1,6 @@
 const fetch = require("cross-fetch");
 const { Videogame, Genre } = require("../db");
-const { API_KEY } = process.env;
+const API_KEY = be38f043def34a55850d548ffb3d4cf9
 
 
 const getGames = async () => {
