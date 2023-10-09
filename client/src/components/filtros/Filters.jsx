@@ -50,7 +50,7 @@ return (
             
             <option value="All">All</option>
             <option value="createdInDb">Created</option>
-            <option value="api">Existentes</option>
+            <option value="api">Existents</option>
 
         </select>
     </div>
