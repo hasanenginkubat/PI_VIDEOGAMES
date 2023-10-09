@@ -5,7 +5,7 @@ import axios from "axios"
 export function getVideogames() {
   return async (dispatch) => {
   try {
-    const call = await axios.get("http://localhost:3001/videogames");
+    const call = await axios.get("https://videogameapi-kpb3.onrender.com/videogames");
     console.log(call.data)
     return dispatch({
       type: "VIDEO_GAMES",
@@ -20,7 +20,7 @@ export function getVideogames() {
     export function getDetail(id) {
       return async (dispatch) => {
       try {
-        const response = await axios.get(`http://localhost:3001/videogames/${id}`);
+        const response = await axios.get(`https://videogameapi-kpb3.onrender.com/videogames/${id}`);
          return dispatch({
           type: "GET_DETAILS",
           payload: response.data,
@@ -34,7 +34,7 @@ export function getVideogames() {
    export function deleteGame(id) {  
     return async (dispatch) =>{
     try {
-    return await axios.delete(`http://localhost:3001/videogames/${id}`).then((g) => dispatch ({
+    return await axios.delete(`https://videogameapi-kpb3.onrender.com/videogames/${id}`).then((g) => dispatch ({
     type: "DELETE_GAME",
     payload: g.data
   }))
@@ -47,7 +47,7 @@ export function getVideogames() {
 export function getPlatform() {
   return async (dispatch) => {
  try {
-    const response = await axios.get(`http://localhost:3001/videogames`);
+    const response = await axios.get(`https://videogameapi-kpb3.onrender.com/videogames`);
     const allPlat = await response.data.map((e) => e.platforms);
     const plats = await allPlat.flat();
     const unicos = [...new Set(plats)];
@@ -67,7 +67,7 @@ export function postGame(game) {
   return async () => {
 
   try {
-     const response = await axios.post("http://localhost:3001/videogames", game);
+     const response = await axios.post("https://videogameapi-kpb3.onrender.com/videogames", game);
     return response;
     
   } catch (error) {
@@ -80,7 +80,7 @@ export function getVideogamesName(name){
   
   return async (dispatch) => {
   try {
-    const response = await axios.get(`http://localhost:3001/videogames?name=${name}`);
+    const response = await axios.get(`https://videogameapi-kpb3.onrender.com/videogames?name=${name}`);
     return dispatch({ 
       type: "VIDEO_GAMES_NAME",
        payload: response.data 
@@ -94,7 +94,7 @@ export function getVideogamesName(name){
 export function getByGenres() {
   return async  (dispatch) => {
   try {
-    const response = await axios.get(`http://localhost:3001/genres`);
+    const response = await axios.get(`https://videogameapi-kpb3.onrender.com/genres`);
     console.log(response.data)
   
     return dispatch({
